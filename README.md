@@ -38,3 +38,6 @@ Run `npm install` to intall libraries.
 To get more help on the **ionic-studycard4** contact me.
 
 Email: hadbsgk@gmail.com
+
+Email: cincrain@gmail.com
+
