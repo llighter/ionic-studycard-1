@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "549242650630",
+    "firebase_url": "https://studycard-251e3.firebaseio.com",
+    "project_id": "studycard-251e3",
+    "storage_bucket": "studycard-251e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549242650630:android:4ea024fc8b97ec24",
+        "android_client_info": {
+          "package_name": "com.llighter.studycard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549242650630-8u53n5n6rb1bf32o8ci2jed89dcm6nm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.llighter.studycard",
+            "certificate_hash": "ec08055d59aefec1d0ad5fc3a80eaf97ea991117"
+          }
+        },
+        {
+          "client_id": "549242650630-r48mvl89ddfd2ir6vvrlgaabahmbpb6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcHsYWHdoYDFgNBU1w6uIDRLTNGMf-ANs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549242650630-r48mvl89ddfd2ir6vvrlgaabahmbpb6m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "549242650630-5vo6nel3r2ph1irmevhi8p9vlhp5qa7j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.llighter.studycard"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
