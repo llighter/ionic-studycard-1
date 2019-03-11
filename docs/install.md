@@ -20,3 +20,12 @@ $ npm install @ionic-native/firebase
 ```console
 $ npm install firebase @angular/fire --save
 ```
+
+## 3. Initial setup for Android and IOS
+
+```console
+// for android
+$ ionic cordova platform add android
+// for ios
+$ ionic cordova platform add ios
+```
