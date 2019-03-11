@@ -1,6 +1,6 @@
 # Install
 
-## Initial setup for firebase native
+## 1. Initial setup for firebase native
 
 ### Downloard native config file to project directory
 
@@ -13,4 +13,10 @@ IOS: `GoogleService-info.plist`
 ```console
 $ ionic cordova plugin add cordova-plugin-firebase
 $ npm install @ionic-native/firebase
+```
+
+## 2. Initial setup for angularfire
+
+```console
+$ npm install firebase @angular/fire --save
 ```
