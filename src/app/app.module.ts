@@ -17,6 +17,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 
+import { IonicStorageModule } from '@ionic/storage';
+import { GooglePlus } from '@ionic-native/google-plus/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -29,10 +32,12 @@ import { AngularFireMessagingModule } from '@angular/fire/messaging';
     , AngularFirestoreModule
     , AngularFireFunctionsModule
     , AngularFireMessagingModule
+    , IonicStorageModule.forRoot()
   ],
   providers: [
     Firebase,
     StatusBar,
+    GooglePlus,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
