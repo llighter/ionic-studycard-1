@@ -86,4 +86,7 @@
     <engine name="android" spec="~7.1.4" />
     <engine name="ios" spec="~4.5.5" />
     <plugin name="cordova-sqlite-storage" spec="3.1.0" />
+    <plugin name="cordova-plugin-googleplus" spec="7.0.0">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.549242650630-5vo6nel3r2ph1irmevhi8p9vlhp5qa7j" />
+    </plugin>
 </widget>
