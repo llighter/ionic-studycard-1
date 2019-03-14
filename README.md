@@ -1,4 +1,5 @@
 # Ioinc Studycard
+# Ionic Studycard
 
 Ionic version of studycard system using @angular/fire. You can build this application by installing using Ionic CLI.
 
@@ -38,3 +39,6 @@ Run `npm install` to intall libraries.
 To get more help on the **ionic-studycard4** contact me.
 
 Email: hadbsgk@gmail.com
+
+Email: cincrain@gmail.com
+
