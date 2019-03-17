@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { DecksPage } from './decks.page';
 import { AuthGuard } from '../guards/auth.guard';
 import { DeckFormComponent } from './deck-form/deck-form.component';
+import { DeckDetailComponent } from './deck-detail/deck-detail.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DecksPage, DeckFormComponent],
+  declarations: [DecksPage, DeckFormComponent, DeckDetailComponent],
   entryComponents: [DeckFormComponent]
 })
 export class DecksPageModule {}
