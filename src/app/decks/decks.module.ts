@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
 import { DecksPage } from './decks.page';
 import { AuthGuard } from '../guards/auth.guard';
+import { DeckFormComponent } from './deck-form/deck-form.component';
 
 const routes: Routes = [
   {
@@ -21,8 +22,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DecksPage]
+  declarations: [DecksPage, DeckFormComponent],
+  entryComponents: [DeckFormComponent]
 })
 export class DecksPageModule {}
