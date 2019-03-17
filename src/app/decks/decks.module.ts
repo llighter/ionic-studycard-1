@@ -6,11 +6,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { DecksPage } from './decks.page';
+import { AuthGuard } from '../guards/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: DecksPage
+    component: DecksPage,
+    canActivate: [AuthGuard]
   }
 ];
 
