@@ -9,12 +9,21 @@ import { DecksPage } from './decks.page';
 import { AuthGuard } from '../guards/auth.guard';
 import { DeckFormComponent } from './deck-form/deck-form.component';
 import { DeckDetailComponent } from './deck-detail/deck-detail.component';
+import { PreloardGuard } from '../guards/preloard.guard';
+import { CardFormComponent } from './card-form/card-form.component';
 
 const routes: Routes = [
   {
     path: '',
     component: DecksPage,
     canActivate: [AuthGuard]
+  },
+  {
+    path: ':id',
+    component: DeckDetailComponent,
+    resolve: {
+      deck: PreloardGuard
+    }
   }
 ];
 
@@ -26,7 +35,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DecksPage, DeckFormComponent, DeckDetailComponent],
-  entryComponents: [DeckFormComponent]
+  declarations: [DecksPage, DeckFormComponent, DeckDetailComponent, CardFormComponent],
+  entryComponents: [DeckFormComponent, CardFormComponent]
 })
 export class DecksPageModule {}
