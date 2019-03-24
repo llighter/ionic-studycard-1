@@ -19,6 +19,18 @@ import { AngularFireMessagingModule } from '@angular/fire/messaging';
 
 import { IonicStorageModule } from '@ionic/storage';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
+import * as Hammer from 'hammerjs';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+    // override hammerjs default configuration
+    // 기본 쓸기 제스켜는 좌우만 포함되어 있어서 상하좌우를 사용할 수 있도록 설정
+    'swipe': { direction: Hammer.DIRECTION_ALL }
+  };
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -40,7 +52,9 @@ import { GooglePlus } from '@ionic-native/google-plus/ngx';
     GooglePlus,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    { provide: FirestoreSettingsToken, useValue: {} }
+    { provide: FirestoreSettingsToken, useValue: {} },
+    { provide: HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig },
+    InAppBrowser
   ],
   bootstrap: [AppComponent]
 })
